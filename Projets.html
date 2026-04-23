@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Projets - FCDR</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1509099836639-18ba1795216d");
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* GRILLE */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* CARTE */
+.project {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+/* IMAGE */
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CONTENU */
+.project-content {
+    padding: 15px;
+}
+
+/* TITRE CATÉGORIE */
+.category {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+/* IMPACT */
+.impact {
+    background: #ff5a1f;
+    color: white;
+    padding: 60px 20px;
+}
+
+.impact-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.impact-box {
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><strong>FCDR</strong></div>
+
+    <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="projets.html">Projets</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-text">
+        <h1>Nos projets</h1>
+        <p>Des actions concrètes sur le terrain</p>
+    </div>
+</div>
+
+<!-- SECTION ÉDUCATION -->
+<div class="section">
+
+    <h2 class="category">Éducation</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1610116306796-6fea9f4fae38">
+            <div class="project-content">
+                <h3>Priorité à la science</h3>
+                 <p>- Bibliothèque</p>
+                 <p>- Mediathèque</p>
+               
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+            <div class="project-content">
+                <h3>Formation professionnelle</h3>
+                <p>Insertion des jeunes dans le monde du travail.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SECTION ENVIRONNEMENT -->
+<div class="section">
+
+    <h2 class="category">Environnement</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1598064902710-b3b0ebb32ffd">
+            <div class="project-content">
+                <h3>Reforestation</h3>
+                <p>Plantation d’arbres pour préserver l’écosystème.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479">
+            <div class="project-content">
+                <h3>Sensibilisation</h3>
+                <p>Campagnes de sensibilisation écologique.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SECTION LOISIRS -->
+<div class="section">
+
+    <h2 class="category">Loisirs</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+            <div class="project-content">
+                <h3>Sport</h3>
+                <p>Promotion de l’activité physique et des initiatives sportives locales.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76">
+            <div class="project-content">
+                <h3>Musique</h3>
+                <p>Valorisation de la musique traditionnelle et contemporaine.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1719241373077-d896e6247c5f">
+            <div class="project-content">
+                <h3>Peinture</h3>
+                <p>Encouragement des expressions artistiques et culturelles.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba">
+            <div class="project-content">
+                <h3>Cinéma</h3>
+                <p>Soutien à la création audiovisuelle et à la diffusion culturelle.</p>
+            </div>
+        </div>
+
+    </div>
+    
+<!-- IMPACT -->
+<div class="impact">
+
+    <h2>Notre impact</h2>
+
+    <div class="impact-boxes">
+        <div class="impact-box">+500 bénéficiaires</div>
+        <div class="impact-box">+20 projets réalisés</div>
+        <div class="impact-box">+10 communautés aidées</div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 FCDR</p>
+</footer>
+
+</body>
+</html>

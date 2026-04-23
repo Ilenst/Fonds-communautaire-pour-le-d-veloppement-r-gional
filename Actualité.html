@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Actualités - FCDR</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 350px;
+    background-image: url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+}
+
+/* ARTICLES */
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.article {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* IMAGE */
+.article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CONTENU */
+.article-content {
+    padding: 15px;
+}
+
+/* BOUTON */
+.read-more {
+    color: #ff5a1f;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div><strong>FCDR</strong></div>
+
+    <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="projets.html">Projets</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-text">
+        <h1>Actualités</h1>
+        <p>Suivez nos dernières actions</p>
+    </div>
+</div>
+
+<!-- ARTICLES -->
+<div class="section">
+
+    <div class="articles">
+
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+            <div class="article-content">
+                <h3>Lancement d’un projet éducatif</h3>
+                <p>Le FCDR a lancé un nouveau programme pour soutenir les jeunes.</p>
+                <a href="article1.html">Lire plus</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d">
+            <div class="article-content">
+                <h3>Action environnementale</h3>
+                <p>Des initiatives ont été mises en place pour protéger l’environnement.</p>
+                <a href="article2.html">Lire plus</a>
+            </div>
+        </div>
+
+        <div class="article">
+            <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479">
+            <div class="article-content">
+                <h3>Nouvelle collaboration</h3>
+                <p>Le FCDR développe de nouveaux partenariats avec des acteurs locaux.</p>
+                <a href="article3.html">Lire plus</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 FCDR</p>
+</footer>
+
+</body>
+</html>
